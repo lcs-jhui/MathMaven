@@ -12,7 +12,7 @@ struct MultiplicationView: View {
     //MARK: Stored Properties
     
     //Numbers for the question
-    @State var firstValue = Int-.random(in: 1...72)
+    @State var firstValue = Int.random(in: 1...72)
     @State var secondValue = Int.random(in: 1...72)
 
     //Holds the input by the user
@@ -27,16 +27,52 @@ struct MultiplicationView: View {
     //MARK: Computed Properties
     
     //The correct answer
-    @State var correctResponse: Int {
+    var correctResponse: Int {
         return firstValue + secondValue
     }
     
     //User interface
     var body: some View {
-        VStack {
-            Text("Multiplication")
-            Text(Operation.multiplication.rawValue)
+        VStack(spacing: 0) {
+            
+            //Question
+            Group {
+                HStack{
+                    Text(Operation.multiplication.rawValue)
+                    
+                    Spacer()
+                    
+                    VStack(alignment: .trailing) {
+                        Text("\(firstValue)")
+                        Text("\(secondValue)")
+                    }
+                }
+                
+                Divider()
+            }
+            .padding(.horizontal)
+            
+            //Answer input
+            HStack{
+                
+                ZStack{
+                    
+                    //Only show when the answer is correct
+                    if answerCorrect == true {
+                        Image(systemName: "checkmark.circle")
+                            .foregroundColor(.green)
+                    }
+                    
+                    //Show if answer is checked and incorrect
+                    if answerChecked == true && answerCorrect == false {
+                        Image(systemName: "x.square")
+                            .foregroundColor(.red)
+                    }
+                }
+            }
         }
+        .font(Font.custom("SF Pro", size: 64))
+
     }
 }
 
