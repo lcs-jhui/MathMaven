@@ -18,6 +18,8 @@
 		814859162A1E360D00A7315E /* CheckAnswerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814859152A1E360D00A7315E /* CheckAnswerButtonView.swift */; };
 		B9620CAB2A20077000EB44E5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B9620CAA2A20077000EB44E5 /* Lottie */; };
 		B9620CAD2A20081600EB44E5 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9620CAC2A20081600EB44E5 /* LottieView.swift */; };
+		B9620CB02A2009A600EB44E5 /* 119540-correct-answer.json in Resources */ = {isa = PBXBuildFile; fileRef = B9620CAF2A2009A500EB44E5 /* 119540-correct-answer.json */; };
+		B9620CB22A2009CE00EB44E5 /* 119539-incorrect-answer.json in Resources */ = {isa = PBXBuildFile; fileRef = B9620CB12A2009CE00EB44E5 /* 119539-incorrect-answer.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		814859112A1E2A5900A7315E /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		814859152A1E360D00A7315E /* CheckAnswerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAnswerButtonView.swift; sourceTree = "<group>"; };
 		B9620CAC2A20081600EB44E5 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		B9620CAF2A2009A500EB44E5 /* 119540-correct-answer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "119540-correct-answer.json"; sourceTree = "<group>"; };
+		B9620CB12A2009CE00EB44E5 /* 119539-incorrect-answer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "119539-incorrect-answer.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				814858F82A1E28DE00A7315E /* MathMavenApp.swift */,
 				814859102A1E2A4500A7315E /* Model */,
 				814859062A1E292A00A7315E /* Views */,
+				B9620CAE2A20086900EB44E5 /* Animations */,
 				814858FC2A1E28DF00A7315E /* Assets.xcassets */,
 				814858FE2A1E28DF00A7315E /* Preview Content */,
 			);
@@ -109,6 +114,15 @@
 				814859152A1E360D00A7315E /* CheckAnswerButtonView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B9620CAE2A20086900EB44E5 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				B9620CAF2A2009A500EB44E5 /* 119540-correct-answer.json */,
+				B9620CB12A2009CE00EB44E5 /* 119539-incorrect-answer.json */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +189,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9620CB02A2009A600EB44E5 /* 119540-correct-answer.json in Resources */,
 				814859002A1E28DF00A7315E /* Preview Assets.xcassets in Resources */,
 				814858FD2A1E28DF00A7315E /* Assets.xcassets in Resources */,
+				B9620CB22A2009CE00EB44E5 /* 119539-incorrect-answer.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
