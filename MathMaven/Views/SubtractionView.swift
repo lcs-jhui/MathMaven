@@ -59,14 +59,14 @@ struct SubtractionView: View {
                     
                     // Only show this when the answer was found to be correct
                     if answerCorrect == true {
-                        Image(systemName: "checkmark.circle")
-                            .foregroundColor(.green)
+                        LottieView(animationNamed: "119540-correct-answer")
+
                     }
                     
                     // Show this when the answer was checked and found to be false
                     if answerChecked == true && answerCorrect == false {
-                        Image(systemName: "x.square")
-                            .foregroundColor(.red)
+                        LottieView(animationNamed: "119539-incorrect-answer")
+
                     }
                 }
                 
