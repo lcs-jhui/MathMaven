@@ -23,6 +23,6 @@ let favourites = [
     
     ,
 
-    AnimationDesc(fileName: "119539-incorrect-answer,
+    AnimationDesc(fileName: "119539-incorrect-answer",
                        description: "incorrect answer")
 ]
