@@ -20,6 +20,7 @@
 		B9620CAD2A20081600EB44E5 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9620CAC2A20081600EB44E5 /* LottieView.swift */; };
 		B9620CB02A2009A600EB44E5 /* 119540-correct-answer.json in Resources */ = {isa = PBXBuildFile; fileRef = B9620CAF2A2009A500EB44E5 /* 119540-correct-answer.json */; };
 		B9620CB22A2009CE00EB44E5 /* 119539-incorrect-answer.json in Resources */ = {isa = PBXBuildFile; fileRef = B9620CB12A2009CE00EB44E5 /* 119539-incorrect-answer.json */; };
+		B9620CB42A200B1000EB44E5 /* AnimationDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9620CB32A200B1000EB44E5 /* AnimationDescription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B9620CAC2A20081600EB44E5 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		B9620CAF2A2009A500EB44E5 /* 119540-correct-answer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "119540-correct-answer.json"; sourceTree = "<group>"; };
 		B9620CB12A2009CE00EB44E5 /* 119539-incorrect-answer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "119539-incorrect-answer.json"; sourceTree = "<group>"; };
+		B9620CB32A200B1000EB44E5 /* AnimationDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDescription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				814859112A1E2A5900A7315E /* Operation.swift */,
+				B9620CB32A200B1000EB44E5 /* AnimationDescription.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				814858F92A1E28DE00A7315E /* MathMavenApp.swift in Sources */,
 				8148590A2A1E294A00A7315E /* SubtractionView.swift in Sources */,
 				8148590F2A1E298300A7315E /* DivisionView.swift in Sources */,
+				B9620CB42A200B1000EB44E5 /* AnimationDescription.swift in Sources */,
 				814859122A1E2A5900A7315E /* Operation.swift in Sources */,
 				814859162A1E360D00A7315E /* CheckAnswerButtonView.swift in Sources */,
 				B9620CAD2A20081600EB44E5 /* LottieView.swift in Sources */,
