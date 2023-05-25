@@ -52,6 +52,9 @@ struct DivisionView: View {
                 }
                 
                 Divider()
+                
+                Text("\(correctResponse)")
+                
             }
             .padding(.horizontal)
             
@@ -117,8 +120,8 @@ struct DivisionView: View {
     func generateNewQuestion() {
         
         // Generate a new question
-        firstValue = Int.random(in: 1...72)
-        secondValue = Int.random(in: 1...72)
+        firstValue = Int.random(in: 1...10)
+        secondValue = Int.random(in: 1...10)
 
         // Reset properties that track what's happening with the current question
         answerChecked = false

@@ -62,16 +62,13 @@ struct MultiplicationView: View {
                     
                     //Only show when the answer is correct
                     if answerCorrect == true {
-                        Image(systemName: "checkmark.circle")
-                            .foregroundColor(.green)
-                            .font(Font.custom("SF Pro", size: 64))
+                        LottieView(animationNamed: "119540-correct-answer")
                     }
                     
                     //Show if answer is checked and incorrect
                     if answerChecked == true && answerCorrect == false {
-                        Image(systemName: "x.square")
-                            .foregroundColor(.red)
-                            .font(Font.custom("SF Pro", size: 64))
+                        LottieView(animationNamed: "119539-incorrect-answer")
+
                     }
                 }
                 
